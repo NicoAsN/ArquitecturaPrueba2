@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Cargando hojas de estilos de Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Multas.css">
+
+    <!-- Cargando jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/IngresoAMultas.js"></script>
+
+</head>
+
+<body>
+
+    <!--Navbar o barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="CrudMulta.html"><img src="imagenes/cropped-LOGO.png" alt="Logo tipo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        </div>
+    </nav>
+    <!--Cards Para Ingresar, Buscar, Actualizar o Eliminar multas-->
+    <div class="card-group">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Ingresar Multa</h5>
+            <img id="profile-img" class="profile-img-card" src="imagenes/ingresarMulta.png" alt="">
+            <a href="IngresarMulta.html"><button h class="btn btn-lg btn-primary btn-block btn-signin">Ingresar Multa</button></a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Buscar Multa</h5>
+            <img id="profile-img" class="profile-img-card" src="imagenes/Buscar.png" alt="">
+            <a href="BuscarMulta.html"><button href="#" class="btn btn-lg btn-primary btn-block btn-signin">Buscar Multa</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="card-group">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Actualizar Multa</h5>
+            <img id="profile-img" class="profile-img-card" src="imagenes/Actualizar.png" alt="">
+            <a href="ActualizarMulta.html"><button href="#" class="btn btn-lg btn-primary btn-block btn-signin">Actualizar Multa</button></a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title" style="text-align: center;">Eliminar Multa</h5>
+            <img id="profile-img" class="profile-img-card" src="imagenes/delete.png" alt="">
+            <a href="EliminarMulta.html"><button href="#" class="btn btn-lg btn-primary btn-block btn-signin">Eliminar Multa</button></a>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <!--Cargando jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

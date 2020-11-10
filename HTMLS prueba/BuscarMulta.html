@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Cargando hojas de estilos de Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/IngresarMultas.css">
+
+    <!-- Cargando jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="js/IngresoAMultas.js"></script>
+
+</head>
+
+<body>
+
+    <!--Navbar o barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="CrudMulta.html"><img src="imagenes/cropped-LOGO.png" alt="Logo tipo"></a>
+        <h5 class="card-title" style="text-align: center; color: rgb(139, 137, 137);">Buscar Multa</h5>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        </div>
+    </nav>
+    <!--Datos de la multa-->
+    <div class="card-group">
+
+        
+        <div class="card card-container">
+            <span id="reauth-email" class="reauth-email"></span>
+            <img id="login-img" class="profile-img-card" src="Imagenes/inspector.png" />
+            <p id="profile-name" class="profile-name-card">Inspector</p>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="text" id="ingresoNombreInspector" class="form-control" placeholder="Nombre Inspector" disabled>
+                <br>
+                <input type="text" id="ingresoRutInspector" class="form-control" placeholder="Rut Inspector" disabled>
+                <br>
+                <input type="date" id="ingresoFecha" class="form-control" placeholder="Fecha" disabled>
+            
+        </div><!-- /container -->
+
+        <div class="card card-container">
+            <img id="login-img" class="profile-img-card" src="Imagenes/vehiculo.png" />
+            <p id="profile-name" class="profile-name-card">Vehiculo</p>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <input type="text" id="ingresoPatente" class="form-control" placeholder="Patente" required autofocus>
+                <br>
+                <input type="text" id="ingresoRutDueño" class="form-control" placeholder="Rut Dueño" disabled>
+                <br>
+                <input type="text" id="ingresoNombreDueño" class="form-control" placeholder="Nombre" disabled>
+                <br>
+                <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Buscar</button>
+        </div><!-- /container -->
+
+        <div class="card card-container">
+            <img id="login-img" class="profile-img-card" src="Imagenes/ingresarMulta.png" />
+            <p id="profile-name" class="profile-name-card">Descripcion de la infraccion</p>
+            <form class="form-signin">
+                <span id="reauth-email" class="reauth-email"></span>
+                <select id="tipoMulta" name="Tipo" class="form-control" disabled>
+                    <option value="" selected="selected">Tipo</option>
+                    <option value="estacionamiento">Estacionamiento</option>
+                    <option value="alcohol">Alcohol</option>
+                    <option value="velocidad">Exceso de Velocidad</option>
+                </select>
+                  <br>
+                <input type="text" id="ingresoDireccion" class="form-control" placeholder="Lugar" disabled>
+                <br>
+                <select id="NotificacionMulta" name="Notificacion" class="form-control" disabled>
+                    <option value="" selected="selected">Notificacion</option>
+                    <option value="empadronado">Empadronado</option>
+                    <option value="normal">Normal</option>
+                </select>
+        </div><!-- /container -->
+        
+    </div>    
+    
+    <!--Cargando jQuery-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
